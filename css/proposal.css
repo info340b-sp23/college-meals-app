@@ -1,0 +1,34 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: blanchedalmond;
+
+}
+h1 {
+    font-weight: 500;
+    font-style: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 300;
+    font-style: bold;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th {
+    text-align: center;
+    padding: 1em;
+}
+
+td {
+    text-align: center;
+}

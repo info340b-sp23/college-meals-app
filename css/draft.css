@@ -1,1 +1,47 @@
+body {
+    margin: 0.5rem;
+    color: black;
+}
 
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+  }
+
+  nav a {
+    color: black;
+    font-size: 1rem;
+    margin: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  nav .page-links {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    nav .hamburger-menu {
+        display: none;
+    }
+    nav .page-links {
+        display: block;
+    }
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  div .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container {
+    max-width: 800px; 
+    margin: 0 auto;
+  }

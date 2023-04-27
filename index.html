@@ -41,8 +41,79 @@
 
         <!-- Recipe Feed -->
         <section class="Recipe Feed">
+          <h1 class="recipe-feed">Recipe Feed</h1>
+          <form>
+          <div class="specification-sections">
+            <div class="cost-section">
+              <!-- Cost section content -->
+              <div class="form-group">
+                <label for="cost">Cost:</label>
+                <select id="cost" name="cost">
+                  <option value="">Select cost</option>
+                  <option value="$">Less than $10</option>
+                  <option value="$$">Between $10 and $20</option>
+                  <option value="$$$">More than $20</option>
+                </select>
+              </div>
+            </div>
+            <div class="time-section">
+              <!-- Time section content -->
+              <div class="form-group">
+                <label for="time">Time:</label>
+                <select id="time" name="time">
+                  <option value="">Select time</option>
+                  <option value="15">Less than 15 minutes</option>
+                  <option value="30">Between 15 and 30 minutes</option>
+                  <option value="45">Between 30 and 45 minutes</option>
+                  <option value="60">More than 45 minutes</option>
+                </select>
+              </div>
+            </div>
+            <div class="diet-section">
+              <!-- Dietary section content -->
+              <div class="form-group">
+                <label for="diet">Dietary restrictions:</label>
+                <select id="diet" name="diet">
+                  <option value="">Select dietary restrictions</option>
+                  <option value="vegan">Vegan</option>
+                  <option value="vegetarian">Vegetarian</option>
+                  <option value="paleo">Paleo</option>
+                  <option value="gluten-free">Gluten-free</option>
+                </select>
+              </div>
+            </div>
+            <div class="allergy-section">
+              <!-- Allergy section content -->
+              <div class="form-group">
+                <label for="allergy">Allergies:</label><br>
+                <input type="checkbox" id="gluten" name="gluten" value="gluten">
+                <label for="gluten">Gluten</label><br>
+                <input type="checkbox" id="dairy" name="dairy" value="dairy">
+                <label for="dairy">Dairy</label><br>
+                <input type="checkbox" id="nuts" name="nuts" value="nuts">
+                <label for="nuts">Nuts</label>
+              </div>
+            </div>
+            <div class="nutrition-section">
+              <!-- Nutrition section content -->
+              <div class="form-group">
+                <label for="nutrition">Nutrition:</label><br>
+                <input type="radio" id="high-protein" name="nutrition" value="high-protein">
+                <label for="high-protein">High protein</label><br>
+                <input type="radio" id="low-carb" name="nutrition" value="low-carb">
+                <label for="low-carb">Low carb</label><br>
+                <input type="radio" id="low-fat" name="nutrition" value="low-fat">
+                <label for="low-fat">Low fat</label>
+              </div>
+              <button type="submit">Search</button>
+            </div>
+          </div>
+        </form>
+          
+        
+
+
             <div class="container">
-              <h1 class="recipe-feed">Recipe Feed</h1>
               <div class="row">
 
                 <!-- Post 1 -->

@@ -36,8 +36,9 @@ nav {
     }
   }
 
-  h1 {
+  h1.recipe-feed, h1.find-store {
     text-align: center;
+    margin-bottom: 15px;
   }
 
   div .card-footer {
@@ -154,7 +155,33 @@ nav {
     cursor: pointer;
   }
 
-<<<<<<< HEAD
+  div .card {
+    margin-bottom: 5rem;
+  }
+
+  nav img {
+    max-width: 200px;
+    max-height: 200px;
+    margin-left: auto;
+  }
+
+  .star {
+    font-size: 20px;
+    color: #C7C7C7; 
+    cursor: pointer;
+  }
+  
+  .star-filled {
+    font-size: 20px;
+    color: #FFD700; 
+    cursor: pointer;
+  }
+
+.text-muted {
+  margin: auto;
+}
+
+
   header.rec {
     display: flex;
     justify-content: center;
@@ -171,7 +198,9 @@ nav {
 
   li {
     padding: 5px;
-=======
+
+  }
+
   .settings {
     display: flex;
     justify-content: center;
@@ -209,5 +238,4 @@ nav {
   .settings .settings-box form img {
     width: 50px;
     height: 50px
->>>>>>> 030dcad7aac457bcd4427c4dedbd2dd269e96b57
   }

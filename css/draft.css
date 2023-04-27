@@ -1,6 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
     margin: 0.5rem;
     color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 nav {
@@ -44,4 +49,48 @@ nav {
   .container {
     max-width: 800px; 
     margin: 0 auto;
+  }
+
+  .flex-container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .flex-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  div.card {
+    flex: 0 0 300px;
+    background-color: whitesmoke;
+    margin: .5rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.17), 0 1px 3px rgba(0, 0, 0, 0.17);
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  div.card img {
+    max-height: 300px;
+    border-radius: 10px 10px 0 0;
+    display: block;
+    background-color: white;
+  }
+
+  p a {
+    color: blue;
+  }
+
+  body.groc, p, a {
+    margin: 10px;
+  }
+
+  h2.groc {
+    margin: 10px;
   }

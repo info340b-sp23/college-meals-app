@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Judy Fu, Noor Kaur, Ramya Arivazhagan" />
+    <meta name="description" content="INFO 340 Final Draft 1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    >
+    <title>Home Page</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    >
+    <link
+      rel="icon"
+      href="../college-meals-app/img/meal-plan-app-logo.png"
+      type="image/png"
+    >
+
+    <!-- link in Bootstrap here -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="css/draft.css">
+  </head>
+
+  <body>
+    <header>
+      <!-- ADD NAME OF APP -->
+    </header>
+
+    <!-- MAIN CONTENT -->
+
+    <!-- Navigation -->
+    <nav>
+      <div class="hamburger-menu">
+        <a href="#"><i class="fa fa-bars" aria-label="menu"></i></a>
+      </div>
+      <div class="page-links">
+        <a href="index.html">Home</a>
+        <a href="grocery.html">Grocery</a>
+        <a href="profile.html">Profile</a>
+        <a href="#">Log In</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="profile-card">
+        <div class="profile-box">
+          <img src="img/profile-pic.jpeg" alt="profile picture of user" class="profile-pic">
+          <a href="#"><img src="img/settings.png" alt="settings icon" class="settings-icon"></a>
+          <h1>Rose Smith</h1>
+          <p>3rd Year Undergraduate Student</p>
+          <div class="profile-links">
+            <a href="#"><img src="img/favorite.png" alt="a star indicating favorite" ></a>
+            <a href="#">
+                <img
+                  src="img/shopping-cart.png"
+                  alt="a shopping cart indicating recipes to try"
+                >
+            </a>
+            <a href="#">
+                <img
+                  src="img/rank-list.png"
+                  alt="a shopping cart list with hearts indicating a rank list"
+                >
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="settings">
+        <section class="settings-box">
+          <div class="close-popup">
+            <a href="profile.html">
+              <p>+</p>
+            </a>
+          </div>
+          <form action="">
+            <h2>Dietary Restrictions</h2>
+            <input type="checkbox" name="vegetarian" value="Vegetarian" >
+            <label for="vegetarian">Vegetarian</label>
+            <img src="img/vegetarian.png" alt="vegetables in a basket">
+            <input type="checkbox" name="vegan" value="Vegan" >
+            <label for="vegan">Vegan</label>
+            <img src="img/vegan.png" alt="vegan symbol">
+            <input type="checkbox" name="glutenfree" value="Glutenfree" >
+            <label for="glutenfree">Gluten-Free</label>
+            <img src="img/gluten-free.png" alt="crossed out gluteen">
+            <br>
+            <input type="checkbox" name="dairyfree" value="Dairyfree" >
+            <label for="dairyfree">Dairy-Free</label>
+            <img src="img/dairy-free.png" alt="crossed out cheese">
+            <input type="checkbox" name="halal" value="Halal" >
+            <label for="halal">Halal</label>
+            <img src="img/halal.png" alt="halal symbol">
+            <input type="checkbox" name="kosher" value="Kosher" >
+            <label for="kosher">Kosher</label>
+            <img src="img/kosher.png" alt="kosher symbol">
+            <br>
+            <h2>Food Allergies and Intolerance</h2>
+            <input type="checkbox" name="peanuts" value="Peanuts" >
+            <label for="peanuts">Peanuts</label>
+            <img src="img/peanut.png" alt="crossed out peanut">
+            <input type="checkbox" name="treenuts" value="Treenuts" >
+            <label for="treenuts">Tree Nuts</label>
+            <img src="img/nut.png" alt="crossed out almond">
+            <input type="checkbox" name="sesame" value="Sesame" >
+            <label for="sesame">Sesame</label>
+            <img src="img/sesame.png" alt="sesame seeds">
+            <input type="checkbox" name="soy" value="Soy" >
+            <label for="soy">Soy</label>
+            <img src="img/soy.png" alt="soy beans">
+            <br>
+            <input type="checkbox" name="fish" value="Fish" >
+            <label for="fish">Fish</label>
+            <img src="img/fish.png" alt="a single fish">
+            <input type="checkbox" name="shellfish" value="Shellfish" >
+            <label for="shellfish">Shellfish</label>
+            <img src="img/shellfish.png" alt="a shrimp">
+            <input type="checkbox" name="milk" value="Milk" >
+            <label for="milk">Milk</label>
+            <img src="img/milk.png" alt="a jar of milk">
+            <input type="checkbox" name="egg" value="Egg" >
+            <label for="egg">Egg</label>
+            <img src="img/egg.png" alt="a single egg">
+            <br><br>
+            <input type="reset">
+          </form>
+
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <!-- ADD COPYRIGHT AND CONTACT INFO -->
+      <p>&copy; The Noun Project, iStock</p>
+    </footer>
+  </body>
+</html>

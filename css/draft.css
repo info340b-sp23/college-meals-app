@@ -36,8 +36,9 @@ nav {
     }
   }
 
-  h1 {
+  h1.recipe-feed, h1.find-store {
     text-align: center;
+    margin-bottom: 15px;
   }
 
   div .card-footer {
@@ -106,10 +107,10 @@ nav {
   }
 
   .profile-box {
-    background: #997864;
+    background: #D3D3D3;
     text-align: center;
     padding: 50px 100px;
-    color: #fff;
+    color: black;
     position: relative;
     border-radius: 30px;
   }
@@ -154,6 +155,33 @@ nav {
     cursor: pointer;
   }
 
+  div .card {
+    margin-bottom: 5rem;
+  }
+
+  nav img {
+    max-width: 200px;
+    max-height: 200px;
+    margin-left: auto;
+  }
+
+  .star {
+    font-size: 20px;
+    color: #C7C7C7; 
+    cursor: pointer;
+  }
+  
+  .star-filled {
+    font-size: 20px;
+    color: #FFD700; 
+    cursor: pointer;
+  }
+
+.text-muted {
+  margin: auto;
+}
+
+
   header.rec {
     display: flex;
     justify-content: center;
@@ -170,6 +198,9 @@ nav {
 
   li {
     padding: 5px;
+
+  }
+
   .settings {
     display: flex;
     justify-content: center;
@@ -184,16 +215,16 @@ nav {
   .settings .settings-box {
     position: relative;
     width: 600px;
-    height: 400px;
+    height: 450px;
     background-color: white;
     border-radius: 20px;
     padding: 30px;
     text-align: center;
   }
 
-  .settings .close-popup {
+  .settings .close-popup p {
     position: absolute;
-    top: 0;
+    top: 10px;
     right: 20px;
     font-size: 50px;
     transform: rotate(45deg);

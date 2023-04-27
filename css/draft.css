@@ -230,7 +230,7 @@ nav {
     transform: rotate(45deg);
   }
 
-  .close-popup a {
+  a {
     text-decoration: none;
     color: black;
   }
@@ -260,4 +260,62 @@ nav {
   margin-bottom: 10px;
   }
 
-  
+  .rank-container {
+    padding: 20px;
+  }
+
+  .rank-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .rank-content .list-selector h2 {
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .rank-food {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .rank-food img {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+  }
+
+  .food-description {
+    text-align: left;
+  }
+
+  .food-description h4 {
+    font-size: 16px;
+  }
+
+  .rank-rating {
+    font-size: 20px;
+    border: solid;
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+  .rank-food-title * {
+    display: inline-block;
+  }
+
+  .rank-food-title img {
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .underlined {
+    text-decoration: underline;
+  }
+

@@ -57,10 +57,10 @@ nav {
   .profile-box {
     background: #997864;
     text-align: center;
-    padding: 40px 90px;
+    padding: 50px 100px;
     color: #fff;
     position: relative;
-    border-radius: 20px;
+    border-radius: 30px;
   }
 
   .profile-box .profile-pic {
@@ -68,8 +68,8 @@ nav {
     height: 200px;
     border-radius: 50%;
     background: #fff;
-    padding: 6px;
-    margin-top: 40px;
+    padding: 10px;
+    margin-top: 20px;
     object-fit: cover;
   }
 
@@ -78,12 +78,16 @@ nav {
     position: absolute;
     right: 40px;
     top: 40px;
+    cursor: pointer;
   }
 
   .profile-box h1 {
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 20px;
-    font-weight: 400;
+  }
+
+  .profile-box p {
+    font-size: 15px;
   }
 
   .profile-links {
@@ -91,7 +95,6 @@ nav {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-
   }
 
   .profile-links img {

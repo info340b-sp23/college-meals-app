@@ -36,7 +36,7 @@ nav {
     }
   }
 
-  h1.recipe-feed, h1.find-store {
+  h2.recipe-feed, h1.find-store {
     text-align: center;
     margin-bottom: 15px;
   }
@@ -245,7 +245,7 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  
+
   .cost-section,
   .time-section,
   .diet-section,
@@ -317,5 +317,11 @@ nav {
 
   .underlined {
     text-decoration: underline;
+  }
+
+  footer {
+    background-color: #D3D3D3;
+    width: 100%;
+    color: blue;
   }
 

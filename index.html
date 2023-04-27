@@ -23,6 +23,7 @@
     <body class="home">
         <header>
             <!-- ADD NAME OF APP -->
+            <h1> Dorm Dishes</h1>
         </header>
 
         <!-- MAIN CONTENT -->
@@ -41,14 +42,14 @@
 
         <!-- Recipe Feed -->
         <section class="Recipe Feed">
-          <h1 class="recipe-feed">Recipe Feed</h1>
+          <h2 class="recipe-feed">Recipe Feed</h2>
           <form>
           <div class="specification-sections">
             <div class="cost-section">
               <!-- Cost section content -->
               <div class="form-group">
                 <label for="cost">Cost:</label>
-                <select id="cost" name="cost">
+                <select class="cost" name="cost">
                   <option value="">Select cost</option>
                   <option value="$">Less than $10</option>
                   <option value="$$">Between $10 and $20</option>
@@ -60,7 +61,7 @@
               <!-- Time section content -->
               <div class="form-group">
                 <label for="time">Time:</label>
-                <select id="time" name="time">
+                <select class="time" name="time">
                   <option value="">Select time</option>
                   <option value="15">Less than 15 minutes</option>
                   <option value="30">Between 15 and 30 minutes</option>
@@ -73,7 +74,7 @@
               <!-- Dietary section content -->
               <div class="form-group">
                 <label for="diet">Dietary restrictions:</label>
-                <select id="diet" name="diet">
+                <select class="diet" name="diet">
                   <option value="">Select dietary restrictions</option>
                   <option value="vegan">Vegan</option>
                   <option value="vegetarian">Vegetarian</option>
@@ -86,11 +87,11 @@
               <!-- Allergy section content -->
               <div class="form-group">
                 <label for="allergy">Allergies:</label><br>
-                <input type="checkbox" id="gluten" name="gluten" value="gluten">
+                <input type="checkbox" class="gluten" name="gluten" value="gluten">
                 <label for="gluten">Gluten</label><br>
-                <input type="checkbox" id="dairy" name="dairy" value="dairy">
+                <input type="checkbox" class="dairy" name="dairy" value="dairy">
                 <label for="dairy">Dairy</label><br>
-                <input type="checkbox" id="nuts" name="nuts" value="nuts">
+                <input type="checkbox" class="nuts" name="nuts" value="nuts">
                 <label for="nuts">Nuts</label>
               </div>
             </div>
@@ -98,11 +99,11 @@
               <!-- Nutrition section content -->
               <div class="form-group">
                 <label for="nutrition">Nutrition:</label><br>
-                <input type="radio" id="high-protein" name="nutrition" value="high-protein">
+                <input type="radio" class="high-protein" name="nutrition" value="high-protein">
                 <label for="high-protein">High protein</label><br>
-                <input type="radio" id="low-carb" name="nutrition" value="low-carb">
+                <input type="radio" class="low-carb" name="nutrition" value="low-carb">
                 <label for="low-carb">Low carb</label><br>
-                <input type="radio" id="low-fat" name="nutrition" value="low-fat">
+                <input type="radio" class="low-fat" name="nutrition" value="low-fat">
                 <label for="low-fat">Low fat</label>
               </div>
               <button type="submit">Search</button>
@@ -120,7 +121,7 @@
                 <div class="col-12 col-md-6">
                   <div class="card">
                     <div class="card-header">
-                        <h2 class="card-title">Veggie Quesadilla <i class="fa fa-leaf text-success"></i></h2>
+                        <h3 class="card-title">Veggie Quesadilla <i class="fa fa-leaf text-success"></i></h3>
                       </div>
                     <img src="img/veggie-quesadilla.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -142,7 +143,7 @@
                 <div class="col-12 col-md-6">
                   <div class="card">
                     <div class="card-header">
-                        <h2 class="card-title">Veggie Quesadilla <i class="fa fa-leaf text-success"></i></h2>
+                        <h3 class="card-title">Veggie Quesadilla <i class="fa fa-leaf text-success"></i></h3>
                       </div>
                     <img src="img/veggie-quesadilla.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -165,7 +166,7 @@
                 <div class="col-12 col-md-6">
                     <div class="card">
                       <div class="card-header">
-                          <h2 class="card-title">Veggie Quesadilla <i class="fa fa-leaf text-success"></i></h2>
+                          <h3 class="card-title">Veggie Quesadilla <i class="fa fa-leaf text-success"></i></h3>
                         </div>
                       <img src="img/veggie-quesadilla.jpeg" class="card-img-top" alt="...">
                       <div class="card-body">
@@ -188,7 +189,7 @@
                   <div class="col-12 col-md-6">
                     <div class="card">
                       <div class="card-header">
-                          <h2 class="card-title">Veggie Quesadilla <i class="fa fa-leaf text-success"></i></h2>
+                          <h3 class="card-title">Veggie Quesadilla <i class="fa fa-leaf text-success"></i></h3>
                         </div>
                       <img src="img/veggie-quesadilla.jpeg" class="card-img-top" alt="...">
                       <div class="card-body">
@@ -212,6 +213,11 @@
 
         <footer>
             <!-- ADD COPYRIGHT AND CONTACT INFO -->
+            <div class="container">
+      <p><a href="mailto:email@collegemeals.uw.edu"><span class="material-icons"></span> email@collegemeals.uw.edu</a></p>
+      <p><a href="tel:555-555-5555"><span class="material-icons">phone</span> 555-555-5555</a></p>
+      <p>&copy; INFO 340 Group 6</p>
+    </div>
         </footer>
     </body>
 

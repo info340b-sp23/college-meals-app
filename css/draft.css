@@ -1,340 +1,353 @@
 * {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+*,
+.cost-section,
+.time-section,
+.diet-section,
+.allergy-section,
+.nutrition-section {
   box-sizing: border-box;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body,
+nav a,
+.profile-box,
+a,
+footer {
+  color: black;
 }
 
 body {
-    margin: 0.5rem;
-    color: black;
+  margin: 0.5rem;
+}
+
+nav,
+div .card-footer,
+.flex-container,
+.flex-cards,
+.profile-card,
+.profile-links {
+  display: flex;
 }
 
 nav {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    padding: 10px;
-  }
+  width: 100%;
+  align-items: center;
+  padding: 10px;
+}
 
-  nav a {
-    color: black;
-    font-size: 1rem;
-    margin: 1rem;
-    width: 100%;
-    justify-content: center;
-  }
+nav a {
+  font-size: 1rem;
+  margin: 1rem;
+  width: 100%;
+  justify-content: center;
+}
 
-  nav .page-links {
+nav .page-links {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  nav .hamburger-menu {
     display: none;
   }
-
-  @media (min-width: 768px) {
-    nav .hamburger-menu {
-        display: none;
-    }
-    nav .page-links {
-        display: block;
-    }
-  }
-
-  h2.recipe-feed, h1.find-store {
-    text-align: center;
-    margin-bottom: 15px;
-  }
-
-  div .card-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .container {
-    max-width: 800px; 
-    margin: 0 auto;
-  }
-
-  .flex-container {
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .flex-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-  }
-
-  div.card {
-    flex: 0 0 300px;
-    background-color: whitesmoke;
-    margin: .5rem;
-    border-radius: 10px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.17), 0 1px 3px rgba(0, 0, 0, 0.17);
-  }
-
-  p {
-    font-size: 12px;
-  }
-
-  div.card img {
-    max-height: 300px;
-    border-radius: 10px 10px 0 0;
+  nav .page-links {
     display: block;
-    background-color: white;
-    margin: 10px;
-    object-fit: cover;
   }
+}
 
-  p a {
-    color: blue;
-  }
+h2.recipe-feed,
+h1.find-store {
+  text-align: center;
+  margin-bottom: 15px;
+}
 
-  body.groc, p, a {
-    margin: 10px;
-  }
+div .card-footer {
+  justify-content: space-between;
+  align-items: center;
+}
 
-  h2.groc {
-    margin: 10px;
-  }
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-  .profile-card {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.flex-container {
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+.flex-cards {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
 
-  .profile-box {
-    background: #D3D3D3;
-    text-align: center;
-    padding: 50px 100px;
-    color: black;
-    position: relative;
-    border-radius: 30px;
-  }
+div.card {
+  flex: 0 0 300px;
+  background-color: whitesmoke;
+  margin: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.17), 0 1px 3px rgba(0, 0, 0, 0.17);
+}
 
-  .profile-box .profile-pic {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: #fff;
-    padding: 10px;
-    margin-top: 20px;
-    object-fit: cover;
-  }
+p {
+  font-size: 12px;
+}
 
-  .profile-box .settings-icon {
-    width: 50px;
-    position: absolute;
-    right: 40px;
-    top: 40px;
-    cursor: pointer;
-  }
+div.card img {
+  max-height: 300px;
+  border-radius: 10px 10px 0 0;
+  display: block;
+  background-color: white;
+  margin: 10px;
+  object-fit: cover;
+}
 
-  .profile-box h1 {
-    font-size: 25px;
-    margin-top: 20px;
-  }
+p a {
+  color: blue;
+}
 
-  .profile-box p {
-    font-size: 15px;
-  }
+body.groc,
+p,
+a {
+  margin: 10px;
+}
 
-  .profile-links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-  }
+h2.groc {
+  margin: 10px;
+}
 
-  .profile-links img {
-    width: 75px;
-    margin: 5px 5px;
-    cursor: pointer;
-  }
+.profile-card {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
 
-  div .card {
-    margin-bottom: 5rem;
-  }
+.profile-box {
+  background: #d3d3d3;
+  text-align: center;
+  padding: 50px 100px;
+  position: relative;
+  border-radius: 30px;
+}
 
-  nav img {
-    max-width: 100px;
-    max-height: 100px;
-    margin-left: auto;
-  }
+.profile-box .profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 10px;
+  margin-top: 20px;
+  object-fit: cover;
+}
 
-  .star {
-    font-size: 20px;
-    color: #C7C7C7; 
-    cursor: pointer;
-  }
-  
-  .star-filled {
-    font-size: 20px;
-    color: #FFD700; 
-    cursor: pointer;
-  }
+.profile-box .settings-icon {
+  width: 50px;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  cursor: pointer;
+}
+
+.profile-box h1 {
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.profile-box p {
+  font-size: 15px;
+}
+
+.profile-links {
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.profile-links img {
+  width: 75px;
+  margin: 5px 5px;
+  cursor: pointer;
+}
+
+div .card {
+  margin-bottom: 5rem;
+}
+
+nav img {
+  max-width: 100px;
+  max-height: 100px;
+  margin-left: auto;
+}
+
+.star {
+  font-size: 20px;
+  color: #c7c7c7;
+  cursor: pointer;
+}
+
+.star-filled {
+  font-size: 20px;
+  color: #ffd700;
+  cursor: pointer;
+}
 
 .text-muted {
   margin: auto;
 }
 
+header.rec {
+  display: flex;
+  justify-content: center;
+}
 
-  header.rec {
-    display: flex;
-    justify-content: center;
-  }
+p.time {
+  text-align: center;
+  font-size: 16px;
+}
 
-  p.time {
-    text-align: center;
-    font-size: 16px;
-  }
- 
-  div.ing {
-    background-color: whitesmoke;
-  }
+div.ing {
+  background-color: whitesmoke;
+}
 
-  li {
-    padding: 5px;
+li {
+  padding: 5px;
+}
 
-  }
+.settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+}
 
-  .settings {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    background-size: cover;
-    position: absolute;
-    top: 0;
-  }
+.settings .settings-box {
+  position: relative;
+  width: 600px;
+  height: 450px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+}
 
-  .settings .settings-box {
-    position: relative;
-    width: 600px;
-    height: 450px;
-    background-color: white;
-    border-radius: 20px;
-    padding: 30px;
-    text-align: center;
-  }
+.settings .close-popup p {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 50px;
+  transform: rotate(45deg);
+}
 
-  .settings .close-popup p {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 50px;
-    transform: rotate(45deg);
-  }
+a {
+  text-decoration: none;
+}
 
-  a {
-    text-decoration: none;
-    color: black;
-  }
+.settings .settings-box form img {
+  width: 50px;
+  height: 50px;
+}
 
-  .settings .settings-box form img {
-    width: 50px;
-    height: 50px
-  }
+.specification-sections {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
-  .specification-sections {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .cost-section,
-  .time-section,
-  .diet-section,
-  .allergy-section,
-  .nutrition-section {
+.cost-section,
+.time-section,
+.diet-section,
+.allergy-section,
+.nutrition-section {
   display: inline-block;
   width: 18%;
   flex: 1;
   padding: 0 10px;
-  box-sizing: border-box;
   min-width: 200px;
   margin-bottom: 10px;
-  }
+}
 
-  .rank-container {
-    padding: 20px;
-  }
+.rank-container {
+  padding: 20px;
+}
 
-  .rank-content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-  }
+.rank-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
 
-  .rank-content .list-selector h2 {
-    display: inline-block;
-    margin: 10px;
-  }
+.rank-content .list-selector h2 {
+  display: inline-block;
+  margin: 10px;
+}
 
-  .rank-food {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-  }
+.rank-food {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
 
-  .rank-food img {
-    width: 200px;
-    height: 200px;
-    padding: 20px;
-  }
+.rank-food img {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
 
-  .food-description {
-    text-align: left;
-  }
+.food-description {
+  text-align: left;
+}
 
-  .food-description h4 {
-    font-size: 16px;
-  }
+.food-description h4 {
+  font-size: 16px;
+}
 
-  .rank-rating {
-    font-size: 20px;
-    border: solid;
-    border-radius: 50%;
-    padding: 10px;
-  }
+.rank-rating {
+  font-size: 20px;
+  border: solid;
+  border-radius: 50%;
+  padding: 10px;
+}
 
-  .rank-food-title * {
-    display: inline-block;
-  }
+.rank-food-title * {
+  display: inline-block;
+}
 
-  .rank-food-title img {
-    width: 70px;
-    height: 70px;
-    padding: 0;
-    margin: 0;
-  }
+.rank-food-title img {
+  width: 70px;
+  height: 70px;
+  padding: 0;
+  margin: 0;
+}
 
-  .underlined {
-    text-decoration: underline;
-  }
+.underlined {
+  text-decoration: underline;
+}
 
-  footer {
-    background-color: #D3D3D3;
-    width: 100%;
-    color: black;
-  }
+footer {
+  background-color: #d3d3d3;
+  width: 100%;
+}
 
-  header {
-    margin-left: auto;
-  }
+header {
+  margin-left: auto;
+}
 
-  header * {
-    display: inline-block;
-  }
+header * {
+  display: inline-block;
+}
 
-  header h1 {
-    font-size: 20px;
-  }
-
+header h1 {
+  font-size: 20px;
+}

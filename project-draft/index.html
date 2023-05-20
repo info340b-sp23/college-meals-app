@@ -25,7 +25,7 @@
 
         <!-- Navigation -->
         <nav> 
-            <div class="hamburger-menu"><a href="#"><i class="fa fa-bars" aria-label="menu"></i></a></div>
+            <div class="hamburger-menu"><a href="#" aria-label="menu"><i class="fa fa-bars"></i></a></div>
             <div class="page-links">
                 <a href="index.html">Home</a>
                 <a href="grocery.html">Grocery</a>
@@ -84,30 +84,47 @@
             </div>
             <div class="allergy-section">
               <!-- Allergy section content -->
+              <label>Allergies:</label>
               <div class="form-group">
-                <label for="allergy">Allergies:</label><br>
-                <div class="allergy" id="allergy">
+                <label for="gluten">
                   <input type="checkbox" class="gluten" id="gluten" name="gluten" value="gluten">
-                  <label for="gluten">Gluten</label><br>
+                  Gluten
+                </label>
+              </div>
+              <div class="form-group">
+                <label for="dairy">
                   <input type="checkbox" class="dairy" id="dairy" name="dairy" value="dairy">
-                  <label for="dairy">Dairy</label><br>
+                  Dairy
+                </label>
+              </div>
+              <div class="form-group">
+                <label for="nuts">
                   <input type="checkbox" class="nuts" id="nuts" name="nuts" value="nuts">
-                  <label for="nuts">Nuts</label>
-                </div>
+                  Nuts
+                </label>
               </div>
             </div>
             <div class="nutrition-section">
               <!-- Nutrition section content -->
+              <label>Nutrition:</label>
               <div class="form-group">
-                <label for="nutrition">Nutrition:</label><br>
-                <input type="radio" class="high-protein" id="high-protein" name="nutrition" value="high-protein">
-                <label for="high-protein">High protein</label><br>
-                <input type="radio" class="low-carb" id="low-carb" name="nutrition" value="low-carb">
-                <label for="low-carb">Low carb</label><br>
-                <input type="radio" class="low-fat" id="low-fat" name="nutrition" value="low-fat">
-                <label for="low-fat">Low fat</label>
+                <label for="high-protein">
+                  <input type="radio" class="high-protein" id="high-protein" name="nutrition" value="high-protein">
+                  High protein
+                </label>
               </div>
-              <button type="submit">Search</button>
+              <div class="form-group">
+                <label for="low-carb">
+                  <input type="radio" class="low-carb" id="low-carb" name="nutrition" value="low-carb">
+                  Low carb
+                </label>
+              </div>
+              <div class="form-group">
+                <label for="low-fat">
+                  <input type="radio" class="low-fat" id="low-fat" name="nutrition" value="low-fat">
+                  Low fat
+                </label>
+              </div>
             </div>
           </div>
         </form>

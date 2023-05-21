@@ -5,7 +5,7 @@ const recipedata = [
     {
         id: 1,
         title: "Recipe 1",
-        cost: "",
+        cost: "$",
         time: "",
         diet: "",
         allergies: [""],

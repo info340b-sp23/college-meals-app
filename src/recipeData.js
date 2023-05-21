@@ -21,7 +21,10 @@ const recipedata = [
       time: "30",
       diet: "",
       allergies: [],
-      nutrition: "low-fat"
+      nutrition: "low-fat",
+      img: "img/chicken-stir-fry.jpeg",
+      author: "Alex M.",
+      description: "Hey, guys! If you're looking for a quick and healthy meal, my Chicken Stir-Fry is the answer. Tender chicken, colorful veggies, and a flavorful sauce come together in just 30 minutes. It's a budget-friendly option too. Perfect for busy college days when you need a delicious and nutritious meal without breaking the bank!"
     },
     {
       id: 3,
@@ -30,7 +33,10 @@ const recipedata = [
       time: "60",
       diet: "vegan",
       allergies: ["nuts"],
-      nutrition: "low-carb"
+      nutrition: "low-carb", 
+      img: "img/vegan-curry.webp",
+      author: "Sophie L.",
+      description: "Calling all vegan food lovers! You have to try my mouthwatering Vegan Curry. It's a burst of flavors and spices that will satisfy your taste buds. Packed with fresh vegetables and aromatic spices, this curry is a perfect combination of healthy and delicious. Plus, it's low-carb and free from nuts, making it suitable for various dietary preferences."
     },
     {
       id: 4,

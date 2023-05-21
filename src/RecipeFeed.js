@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react";
 import { CostFilter } from "./CostFilter";
 import { TimeFilter } from "./TimeFilter";
 import { DietFilter } from "./DietFilter";
+import { AllergyFilter } from "./AllergyFilter";
 
 function RecipeFeed(props) {
-    const recipes = props.recipes;
+    // const recipes = props.recipes;
     const onFilter = props.onFilter;
     const [selectedOptions, setSelectedOptions] = useState({
         cost: "",
@@ -38,7 +39,21 @@ function RecipeFeed(props) {
             ...prevOptions,
             diet: diet,
         }));
-    }
+    };
+
+    const handleAllergyAdd = (allergy) => {
+        setSelectedOptions((prevOptions) => ({
+            ...prevOptions,
+            allergies: [...prevOptions.allergies, allergy],
+        }));
+    };
+
+    const handleAllergyRemove = (allergy) => {
+        setSelectedOptions((prevOptions) => ({
+            ...prevOptions,
+            allergies: prevOptions.allergies.filter((a) => a !== allergy),
+        }));
+    };
 
     return (
         <section className="RecipeFeed">
@@ -55,7 +70,7 @@ function RecipeFeed(props) {
                         <DietFilter selectedDiet={selectedOptions.diet} onDietChange={handleDietChange}/>
                     </div>
                     <div className="allergy-section">
-                        {/* AllergyFilter */}
+                        <AllergyFilter onAllergyAdd={handleAllergyAdd} onAllergyRemove={handleAllergyRemove}/>
                     </div>
                     <div className="nutrition-section">
                         {/* NutritionFilter */}

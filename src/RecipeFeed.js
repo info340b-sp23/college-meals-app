@@ -3,6 +3,7 @@ import { CostFilter } from "./CostFilter";
 import { TimeFilter } from "./TimeFilter";
 import { DietFilter } from "./DietFilter";
 import { AllergyFilter } from "./AllergyFilter";
+import { NutritionFilter } from "./NutritionFilter";
 
 function RecipeFeed(props) {
     // const recipes = props.recipes;

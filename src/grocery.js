@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SeeMore(props) {
+function Grocery(props) {
 
     const handleClick = (event) => {
         window.open(event, '_blank', 'noreferrer');
@@ -49,4 +49,4 @@ function SeeMore(props) {
     );
 }   
 
-export { SeeMore };
+export { Grocery };

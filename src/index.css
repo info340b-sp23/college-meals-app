@@ -370,3 +370,26 @@
     font-size: 20px;
     margin-top: 40px;
   }
+
+  /* CSS styling for a responsive recipe feed using flexbox! */
+  .RecipeFeed {
+    padding: 20px;
+  }
+  
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .filter-group {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .recipe-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }

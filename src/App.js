@@ -30,7 +30,7 @@ function App() {
             
              <Recipe />
 
-             <Grocery onClick={handleClick} />
+             <Grocery />
              <footer>
                 <div className="container">
                     <p><a href="mailto:email@collegemeals.uw.edu"><span className="material-icons"></span> email@collegemeals.uw.edu</a></p>

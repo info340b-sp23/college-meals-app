@@ -1,9 +1,10 @@
 import React from "react";
+import { Nav } from "./Nav";
 
 function App() {
     return (
         <div>
-             {/* <Nav /> */}
+             <Nav />
              
              {/* <RecipeFeed /> */}
              <section className="RecipeFeed">
@@ -46,12 +47,13 @@ function App() {
                 </div>
              </section>
              <footer>
-                <div class="container">
-                    <p><a href="mailto:email@collegemeals.uw.edu"><span class="material-icons"></span> email@collegemeals.uw.edu</a></p>
-                    <p><a href="tel:555-555-5555"><span class="material-icons">phone</span> 555-555-5555</a></p>
+                <div className="container">
+                    <p><a href="mailto:email@collegemeals.uw.edu"><span className="material-icons"></span> email@collegemeals.uw.edu</a></p>
+                    <p><a href="tel:555-555-5555"><span className="material-icons">phone</span> 555-555-5555</a></p>
                     <p>&copy; INFO 340 Group 6, The Noun Project, iStock </p>
                 </div>
              </footer>
         </div>
     );
 }
+export default App;

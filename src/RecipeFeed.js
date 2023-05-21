@@ -55,6 +55,13 @@ function RecipeFeed(props) {
         }));
     };
 
+    const handleNutritionChange = (nutrition) => {
+        setSelectedOptions((prevOptions) => ({
+            ...prevOptions,
+            nutrition: nutrition,
+        }));
+    };
+
     return (
         <section className="RecipeFeed">
             <h2 className="recipe-feed">Recipe Feed</h2>
@@ -73,7 +80,7 @@ function RecipeFeed(props) {
                         <AllergyFilter onAllergyAdd={handleAllergyAdd} onAllergyRemove={handleAllergyRemove}/>
                     </div>
                     <div className="nutrition-section">
-                        {/* NutritionFilter */}
+                        <NutritionFilter onNutritionChange={handleNutritionChange}/>
                     </div>
 
                     <div className="container">

@@ -3,7 +3,7 @@ import React from "react";
 function recipe(props){
 
     return(
-        <div>
+        <section className="Recipe">
             <h1 class="rec">Veggie Quesadilla</h1>
             <p class="time">Prep Time: 5 mins, Cook Time: 2 mins</p>
             <header class="rec">
@@ -37,7 +37,7 @@ function recipe(props){
 
                 </div>
             </section>
-        </div>
+        </section>
     );
 }
 

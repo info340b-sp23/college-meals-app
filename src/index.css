@@ -2,6 +2,7 @@
     font-family: Georgia, "Times New Roman", Times, serif;
   }
   
+  /* This group styles the Recipe Feed.*/
   *,
   .cost-section,
   .time-section,
@@ -22,7 +23,7 @@
   body {
     margin: 0.5rem;
   }
-  
+  /* This grouping styles the Profile Page using flexbox.*/
   nav,
   div .card-footer,
   .flex-container,
@@ -274,6 +275,7 @@
     flex-wrap: wrap;
   }
   
+  /* This group further styles the Recipe Feed. */
   .cost-section,
   .time-section,
   .diet-section,

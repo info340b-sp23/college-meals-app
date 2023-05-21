@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { CostFilter } from "./CostFilter";
+import { TimeFilter } from "./TimeFilter";
 
 function RecipeFeed(props) {
     const recipes = props.recipes;
@@ -14,13 +15,20 @@ function RecipeFeed(props) {
 
     useEffect(() => {
         onFilter(selectedOptions);
-    }, [selectedOptions]);
+    }, [selectedOptions, selectedOptions.time]);
 
     // const [selectedCost, setSelectedCost] = useState("");
     const handleCostChange = (cost) => {
         setSelectedOptions((prevOptions) => ({
             ...prevOptions,
             cost: cost,
+        }));
+    };
+
+    const handleTimeChange = (time) => {
+        setSelectedOptions((prevOptions) => ({
+            ...prevOptions,
+            time: time,
         }));
     };
 
@@ -33,7 +41,7 @@ function RecipeFeed(props) {
                         <CostFilter selectedOptions={selectedOptions} onCostChange={handleCostChange} />
                     </div>
                     <div className="time-section">
-                        {/* <TimeFilter /> */}
+                        <TimeFilter onTimeChange={handleTimeChange}/>
                     </div>
                     <div className="diet-section">
                         {/* <DietFilter /> */}

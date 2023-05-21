@@ -8,7 +8,7 @@ function CostFilter(props) {
 
     return(
         <div className="form-group">
-            <label htmlFor="cost">Cost:</label>
+            <label htmlFor="cost">Cost: </label>
             <select className="cost" id="cost" name="cost" value={props.selectedCost} onChange={handleCostChange}>
                 <option value="">Select cost</option>
                 <option value="$">Less than $10</option> 

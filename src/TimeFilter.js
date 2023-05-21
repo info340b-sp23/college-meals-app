@@ -8,7 +8,7 @@ function TimeFilter(props) {
     return (
         <div className="form-group">
             <label htmlFor="time">Time: </label>
-            <select className="time" id="time" name="time">
+            <select className="time" id="time" name="time" onChange={handleTimeChange}>
                 <option value="">Select time</option>
                 <option value="15">Less than 15 minutes</option>
                 <option value="30">Between 15 and 30 minutes</option>

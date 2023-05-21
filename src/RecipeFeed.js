@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { CostFilter } from "./CostFilter";
 import { TimeFilter } from "./TimeFilter";
+import { DietFilter } from "./DietFilter";
 
 function RecipeFeed(props) {
     const recipes = props.recipes;
@@ -32,19 +33,26 @@ function RecipeFeed(props) {
         }));
     };
 
+    const handleDietChange = (diet) => {
+        setSelectedOptions((prevOptions) => ({
+            ...prevOptions,
+            diet: diet,
+        }));
+    }
+
     return (
         <section className="RecipeFeed">
             <h2 className="recipe-feed">Recipe Feed</h2>
             <form>
                 <div className="specification-sections">
                     <div className="cost-section">
-                        <CostFilter selectedOptions={selectedOptions} onCostChange={handleCostChange} />
+                        <CostFilter selectedCost={selectedOptions.cost} onCostChange={handleCostChange} />
                     </div>
                     <div className="time-section">
                         <TimeFilter onTimeChange={handleTimeChange}/>
                     </div>
                     <div className="diet-section">
-                        {/* <DietFilter /> */}
+                        <DietFilter selectedDiet={selectedOptions.diet} onDietChange={handleDietChange}/>
                     </div>
                     <div className="allergy-section">
                         {/* AllergyFilter */}

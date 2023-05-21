@@ -1,7 +1,6 @@
 import React from "react";
 
 function CostFilter(props) {
-
     const handleCostChange = (event) => {
         props.onCostChange(event.target.value);
     };

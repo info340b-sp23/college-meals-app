@@ -1,6 +1,6 @@
 import React from "react";
 
-function recipe(props){
+function Recipe(props){
 
     return(
         <section className="Recipe">
@@ -41,4 +41,4 @@ function recipe(props){
     );
 }
 
-export { recipe };
+export { Recipe };

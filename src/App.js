@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Nav } from "./Nav";
 import { RecipeFeed } from "./RecipeFeed";
 import recipeData from "./recipeData";
+import {Grocery} from "./Grocery.js";
+import {Recipe} from "./Recipe.js";
 
 function App() {
 
@@ -25,7 +27,10 @@ function App() {
              <Nav />
              
              <RecipeFeed recipes={filteredRecipes} onFilter={handleFilter} />
-                    
+            
+             <Recipe />
+
+             <Grocery onClick={handleClick} />
              <footer>
                 <div className="container">
                     <p><a href="mailto:email@collegemeals.uw.edu"><span className="material-icons"></span> email@collegemeals.uw.edu</a></p>

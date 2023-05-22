@@ -5,7 +5,7 @@ import recipeData from "./recipeData";
 import {Grocery} from "./Grocery.js";
 import {Recipe} from "./Recipe.js";
 import { Profile } from "./Profile";
-import { ProfileSettings } from "./ProfileSettings";
+import RankList from "./RankList";
 
 function App() {
 
@@ -35,6 +35,8 @@ function App() {
              <Grocery />
 
              <Profile />
+
+             <RankList />
 
              <footer>
                 <div className="container">

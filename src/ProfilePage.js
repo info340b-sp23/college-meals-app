@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Nav } from "./Nav";
-import {Grocery} from "./Grocery.js";
+import { Profile } from "./Profile";
+import { ProfileSettings } from "./ProfileSettings";
 
 function GroceryPage() {
 
@@ -8,7 +9,8 @@ function GroceryPage() {
         <div>
              <Nav />
 
-             <Grocery />
+             <Profile />
+             <ProfileSettings />
 
              <footer>
                 <div className="container">

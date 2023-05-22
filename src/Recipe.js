@@ -4,13 +4,13 @@ function Recipe(props){
 
     return(
         <section className="Recipe">
-            <h1 class="rec">Veggie Quesadilla</h1>
-            <p class="time">Prep Time: 5 mins, Cook Time: 2 mins</p>
-            <header class="rec">
-                <img class="ques" src="img/veggie-quesadilla.jpeg" alt="veggie-ques"></img>
+            <h1 className="rec">Veggie Quesadilla</h1>
+            <p className="time">Prep Time: 5 mins, Cook Time: 2 mins</p>
+            <header className="rec">
+                <img className="ques" src="img/veggie-quesadilla.jpeg" alt="veggie-ques"></img>
             </header>
             <section>
-                <div class="ing">
+                <div className="ing">
                     <h2>Ingredients</h2>
                     <ul>
                         <li>Tortilla</li>
@@ -22,7 +22,7 @@ function Recipe(props){
                     </ul>
                 </div>
 
-                <div class="prep">
+                <div className="prep">
                     <h2>Preparing the Quesadilla</h2>
                     <ol>
                         <li>Chop up the bell peppers and onions to your preferred quantity.</li>

@@ -45,7 +45,11 @@ const recipedata = [
       time: "20",
       diet: "pescatarian",
       allergies: [],
-      nutrition: "high-protein"
+      nutrition: "high-protein",
+      img: "img/grilled-salmon.jpeg",
+      author: "David R.",
+      description: "Hey, seafood fans! My Grilled Salmon recipe is a winner. With tender and flaky salmon fillets seasoned to perfection, this dish is a delight for pescatarian foodies. It's ready in just 20 minutes, making it a great option for a quick and healthy dinner. Get your omega-3 fix with this high-protein masterpiece!"
+    
     },
     {
       id: 5,
@@ -54,7 +58,10 @@ const recipedata = [
       time: "45",
       diet: "vegetarian",
       allergies: [],
-      nutrition: "low-fat"
+      nutrition: "low-fat",
+      img: "img/mushroom-risotto.jpeg",
+      author: "Bella G.",
+      description: "Hello, fellow foodies! Prepare to be amazed by my Mushroom Risotto. This creamy and comforting dish is a vegetarian delight. Imagine Arborio rice cooked to perfection with earthy mushrooms and aromatic herbs. It's a culinary journey that satisfies your taste buds and warms your soul. And the best part? It's low in fat, so you can indulge guilt-free!"
     },
     {
       id: 6,
@@ -63,7 +70,11 @@ const recipedata = [
       time: "30",
       diet: "gluten-free",
       allergies: ["gluten"],
-      nutrition: ""
+      nutrition: "",
+      img: "img/gluten-free-pizza.jpeg", 
+      author: "Michelle B.",
+      description: "Pizza lovers, rejoice! I present to you my Gluten-Free Pizza recipe. It's a game-changer for those with gluten sensitivities. Picture a crispy, thin crust topped with your favorite toppings and melty cheese. This gluten-free version brings all the flavors and satisfaction without any gluten-related worries. Trust me, you won't miss the traditional crust!"
+ 
     }
   ];
 export default recipedata;  

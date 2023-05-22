@@ -66,7 +66,7 @@ const recipedata = [
     {
       id: 6,
       title: "Gluten-Free Pizza",
-      cost: "$$",
+      cost: "$$$",
       time: "30",
       diet: "gluten-free",
       allergies: ["gluten"],

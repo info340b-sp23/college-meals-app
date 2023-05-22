@@ -4,6 +4,8 @@ import { RecipeFeed } from "./RecipeFeed";
 import recipeData from "./recipeData";
 import {Grocery} from "./Grocery.js";
 import {Recipe} from "./Recipe.js";
+import { Profile } from "./Profile";
+import { ProfileSettings } from "./ProfileSettings";
 
 function App() {
 
@@ -31,6 +33,9 @@ function App() {
              <Recipe />
 
              <Grocery />
+
+             <Profile />
+
              <footer>
                 <div className="container">
                     <p><a href="mailto:email@collegemeals.uw.edu"><span className="material-icons"></span> email@collegemeals.uw.edu</a></p>

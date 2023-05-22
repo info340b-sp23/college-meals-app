@@ -19,7 +19,7 @@ function RecipeFeed(props) {
 
   useEffect(() => {
     onFilter(selectedOptions);
-  }, [selectedOptions, selectedOptions.time]);
+  }, [selectedOptions, selectedOptions.time, onFilter]);
 
   const handleCostChange = (cost) => {
     setSelectedOptions((prevOptions) => ({

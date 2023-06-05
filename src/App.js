@@ -13,7 +13,8 @@ function App() {
     const [filteredRecipes, setFilteredRecipes] = useState(recipeData);
 
     function handleFilter(options) {
-        const filteredRecipes = recipeData.filter(recipe => {
+        setFilteredRecipes(prevRecipes => {
+          return recipeData.filter(recipe => {
             return (
               (options.cost === "" || recipe.cost === options.cost) &&
               (options.time === "" || recipe.time === options.time) &&
@@ -21,9 +22,9 @@ function App() {
               (options.allergies.length === 0 || options.allergies.every(allergy => recipe.allergies.includes(allergy))) &&
               (options.nutrition === "" || recipe.nutrition === options.nutrition)
             );
+          });
         });
-        setFilteredRecipes(filteredRecipes);
-    }
+      }
 
     return (
         <div>

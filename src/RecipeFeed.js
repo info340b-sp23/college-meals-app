@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { CostFilter } from "./CostFilter";
 import { TimeFilter } from "./TimeFilter";
 import { DietFilter } from "./DietFilter";
@@ -8,7 +8,8 @@ import { RecipeCard } from "./RecipeCard";
 
 function RecipeFeed(props) {
   const recipes = props.recipes;
-  const onFilter = props.onFilter;
+  const onFilter = useCallback(props.onFilter, []);
+
   const [selectedOptions, setSelectedOptions] = useState({
     cost: "",
     time: "",
@@ -19,7 +20,8 @@ function RecipeFeed(props) {
 
   useEffect(() => {
     onFilter(selectedOptions);
-  }, [selectedOptions, selectedOptions.time, onFilter]);
+  }, [onFilter, selectedOptions]);
+
 
   const handleCostChange = (cost) => {
     setSelectedOptions((prevOptions) => ({

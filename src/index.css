@@ -32,7 +32,7 @@
   .profile-links {
     display: flex;
   }
-  
+
   nav {
     width: 100%;
     align-items: center;
@@ -103,6 +103,8 @@
     margin: 0.5rem;
     border-radius: 10px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.17), 0 1px 3px rgba(0, 0, 0, 0.17);
+    position: relative;
+    overflow: hidden;
   }
   
   p {
@@ -114,10 +116,13 @@
     border-radius: 10px 10px 0 0;
     display: block;
     background-color: white;
-    margin: 10px;
-    object-fit: cover;
+    margin: 10px auto;
+    width: calc(100% - 20px);
+    object-fit: contain;
+    object-position: center;
   }
   
+
   p a {
     color: blue;
   }
@@ -369,6 +374,10 @@
   header h1 {
     font-size: 20px;
     margin-top: 40px;
+  }
+
+  .card-header {
+    text-align: center;
   }
 
   /* CSS styling for a responsive recipe feed using flexbox! */

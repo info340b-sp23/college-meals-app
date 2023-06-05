@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 
 function RecipeCard({ recipe }) {
   return (
@@ -18,9 +19,11 @@ function RecipeCard({ recipe }) {
           <span className="star-filled">&#9733;</span>
           <span className="star">&#9733;</span>
           <small className="text-muted">Posted by {recipe.author}</small>
-          <button type="button" className="btn btn-secondary" aria-label="View Recipe Details">
-            View More
-          </button>
+          <Link to={recipe.title.replace(/\s/g, "")}>
+            <button type="button" className="btn btn-secondary" aria-label="View Recipe Details">
+              View More
+            </button>
+          </Link>
         </div>
       </div>
     </div>

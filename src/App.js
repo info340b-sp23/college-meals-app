@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Routes, Route, Link} from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
 import { Nav } from "./Nav";
 import { RecipeFeed } from "./RecipeFeed";
 import recipeData from "./recipeData";
@@ -32,7 +32,7 @@ function App() {
             <Routes>
                 <Route path='*' element={<RecipeFeed recipes={filteredRecipes} onFilter={handleFilter} />} />
             
-                <Route path='/veggiequesadilla' element={<Recipe />}/>
+                <Route path='/VeggieQuesadilla' element={<Recipe />}/>
 
                 <Route path='/grocery.html' element={<Grocery />} />
 

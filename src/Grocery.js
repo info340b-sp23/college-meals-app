@@ -1,6 +1,37 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+import * as d3 from 'd3';
+
+import GROCERY_DATA from './Grocery-Prices.csv';
+
+const groceryData = GROCERY_DATA;
+function CSVResults(props) {
+    const [results, setResults] = useState([]);
+    useEffect(() => {
+        fetch(groceryData)
+            .then(response => response.text())
+            .then(data => {
+                const csvData = d3.csvParse(data);
+                const row = csvData[0];
+                const stores = Object.values(row);
+                setResults(stores);
+            })
+            .catch(error =>{
+                console.error('Error', error);
+            });
+    }, []);
+        return (
+            <div>
+                <ul>
+                    {results.map((value, index) =>(
+                        <li key={index}>{value}</li>
+                    ))}
+                </ul>
+            </div>
+        );
+};
 
 function Grocery(props) {
+
 
     const handleClick = (event) => {
         window.open(event, '_blank', 'noreferrer');
@@ -45,6 +76,8 @@ function Grocery(props) {
 
                 </div>
             </div>
+            <h1 className='find-a-store'>All Store Options</h1>
+            <CSVResults />
         </section>
     );
 }   

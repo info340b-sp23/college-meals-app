@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {Routes, Route, Link} from 'react-router-dom';
 import { Nav } from "./Nav";
 import { RecipeFeed } from "./RecipeFeed";
 import recipeData from "./recipeData";
@@ -26,17 +27,18 @@ function App() {
 
     return (
         <div>
-             <Nav />
-             
-             <RecipeFeed recipes={filteredRecipes} onFilter={handleFilter} />
+            <Nav />
+            <Routes>
+                <Route path='*' element={<RecipeFeed recipes={filteredRecipes} onFilter={handleFilter} />} />
             
-             <Recipe />
+                <Route path='/veggiequesadilla' element={<Recipe />}/>
 
-             <Grocery />
+                <Route path='/grocery.html' element={<Grocery />} />
 
-             <Profile />
+                <Route path='/profile.html' element={<Profile />} />
 
-             <RankList />
+                <Route path='/ranklist' element={<RankList />} />
+            </Routes>
 
              <footer>
                 <div className="container">

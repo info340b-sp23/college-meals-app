@@ -64,6 +64,10 @@ function RecipeFeed(props) {
       nutrition: nutrition,
     }));
   };
+  
+  const recipeCards = recipes.map((recipe) => (
+    <RecipeCard key={recipe.id} recipe={recipe} />
+  ));
 
   return (
     <section className="RecipeFeed">
@@ -92,11 +96,7 @@ function RecipeFeed(props) {
           <NutritionFilter onNutritionChange={handleNutritionChange} />
         </div>
       </form>
-      <div className="recipe-list">
-        {recipes.map((recipe) => (
-          <RecipeCard key={recipe.id} recipe={recipe} />
-        ))}
-      </div>
+      <div className="recipe-list">{recipeCards}</div>
     </section>
   );
 }

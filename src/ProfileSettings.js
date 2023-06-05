@@ -16,7 +16,6 @@ function ProfileSettings() {
           <DietCheckboxes data={dietRestrictionData} breakLine={3}/>
           <h2>Food Allergies and Intolerance</h2>
           <DietCheckboxes data={foodAllergiesData} breakLine={4} />
-          <br></br>
           <input type="reset"/>
         </form>
       </section>
@@ -39,4 +38,4 @@ function DietCheckboxes({ data, breakLine }) {
   ));
 }
 
-export { ProfileSettings };
+export default ProfileSettings;

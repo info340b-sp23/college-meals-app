@@ -7,7 +7,7 @@ function RecipeCard({ recipe }) {
         <div className="card-header">
           <h3 className="card-title">{recipe.title}</h3>
         </div>
-        <img src={recipe.img} className="card-img-top" alt="Recipe" />
+        <img src={recipe.img} className="card-img-top" alt={recipe.imgAlt} />
         <div className="card-body">
           <p className="card-text">{recipe.description}</p>
         </div>
@@ -18,7 +18,7 @@ function RecipeCard({ recipe }) {
           <span className="star-filled">&#9733;</span>
           <span className="star">&#9733;</span>
           <small className="text-muted">Posted by {recipe.author}</small>
-          <button type="button" className="btn btn-secondary">
+          <button type="button" className="btn btn-secondary" aria-label="View Recipe Details">
             View More
           </button>
         </div>

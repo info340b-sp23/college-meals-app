@@ -4,16 +4,16 @@
 const recipedata = [
     {
       id: 1,
-      title: "Spaghetti Bolognese",
-      cost: "$$",
-      time: "45",
+      title: "Veggie Quesadilla",
+      cost: "$",
+      time: "15",
       diet: "vegetarian",
-      allergies: ["gluten"],
-      nutrition: "high-protein",
-      img: "img/spaghetti-bolognese.png",
-      imgAlt: "spaghetti bolognese", 
-      author: "Emily H.",
-      description: "Hey guys! You have to try this Spaghetti Bolognese recipe! It's a veggie version that's so flavorful, you won't miss the meat. Picture perfectly cooked spaghetti smothered in a rich tomato sauce, packed with plant-based protein. It's my go-to dish for study nights, and it's even gluten-free for those with dietary needs. Trust me, it's a taste sensation you won't forget!"
+      allergies: [],
+      nutrition: "low-fat",
+      img: "img/veggie-quesadilla.jpeg",
+      imgAlt: "vegetable quesadilla", 
+      author: "Jillian H.",
+      description: "Calling all college foodies! I just whipped up a game-changing Veggie Quesadilla that will satisfy your taste buds and budget. Imagine warm tortillas enveloping a melty blend of shredded Mexican cheese, sautéed bell peppers, onions, and beans for that perfect crunch and burst of flavor. It's an easy, nutritious, and delicious option whether you need a quick study break or a cozy dinner with friends."
     },
     {
       id: 2,
@@ -84,16 +84,16 @@ const recipedata = [
     },
     {
       id: 7,
-      title: "Veggie Quesadilla",
-      cost: "$",
-      time: "15",
+      title: "Spaghetti Bolognese",
+      cost: "$$",
+      time: "45",
       diet: "vegetarian",
-      allergies: [],
-      nutrition: "low-fat",
-      img: "img/veggie-quesadilla.jpeg",
-      imgAlt: "vegetable quesadilla", 
-      author: "Jillian H.",
-      description: "Calling all college foodies! I just whipped up a game-changing Veggie Quesadilla that will satisfy your taste buds and budget. Imagine warm tortillas enveloping a melty blend of shredded Mexican cheese, sautéed bell peppers, onions, and beans for that perfect crunch and burst of flavor. It's an easy, nutritious, and delicious option whether you need a quick study break or a cozy dinner with friends."
+      allergies: ["gluten"],
+      nutrition: "high-protein",
+      img: "img/spaghetti-bolognese.png",
+      imgAlt: "spaghetti bolognese", 
+      author: "Emily H.",
+      description: "Hey guys! You have to try this Spaghetti Bolognese recipe! It's a veggie version that's so flavorful, you won't miss the meat. Picture perfectly cooked spaghetti smothered in a rich tomato sauce, packed with plant-based protein. It's my go-to dish for study nights, and it's even gluten-free for those with dietary needs. Trust me, it's a taste sensation you won't forget!"
     }
   ];
 export default recipedata;  

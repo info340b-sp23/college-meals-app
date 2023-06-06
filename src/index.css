@@ -11,7 +11,12 @@
   .nutrition-section {
     box-sizing: border-box;
   }
-  
+
+  h2.recipe-feed {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
   body,
   nav a,
   .profile-box,
@@ -46,6 +51,10 @@
     justify-content: center;
   }
   
+  nav a:hover {
+    color: #876F5A;
+  }
+
   nav .hamburger-menu {
     width: 40px;
     height: 40px;
@@ -80,6 +89,15 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  
+  div.card-header {
+    color: #6D5745;
+  }
+  
+  div.card-body {
+    color: #6D5745;
+  }
   
   .container {
     max-width: 800px;
@@ -99,12 +117,12 @@
   
   div.card {
     flex: 0 0 300px;
-    background-color: whitesmoke;
     margin: 0.5rem;
     border-radius: 10px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.17), 0 1px 3px rgba(0, 0, 0, 0.17);
     position: relative;
     overflow: hidden;
+    background-color: #F5ECE2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   p {
@@ -293,6 +311,26 @@
     min-width: 200px;
     margin-bottom: 10px;
   }
+
+  .btn {
+  background-color: #AD9885; 
+  border: none;
+  color: white;
+  padding: 10px 20px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+  border-radius: 5px; 
+  }
+
+  .btn:hover {
+    background-color: #937962;
+  }
+
+  .recipe-author {
+    padding-left: 20px;
+  }
   
   .rank-container {
     padding: 20px;
@@ -354,8 +392,11 @@
   }
   
   footer {
-    background-color: #d3d3d3;
+    background-color: #E8DFD3;
+    color: #6D5745; 
     width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   
   header {
@@ -402,3 +443,5 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
   }
+
+ 

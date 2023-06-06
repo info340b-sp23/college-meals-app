@@ -71,7 +71,8 @@ function RecipeFeed(props) {
 
   return (
     <section className="RecipeFeed">
-      <h2>Recipe Feed</h2>
+      <h2 className="recipe-feed">Recipe Feed</h2>
+      
       <form className="filters">
         <div className="filter-group">
           <CostFilter

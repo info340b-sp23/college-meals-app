@@ -7,7 +7,7 @@ function DietFilter(props) {
 
     return (
         <div className="form-group">
-            <label htmlFor="diet">Dietary restrictions:</label>
+            <label htmlFor="diet">Dietary restrictions: </label>
             <select className="diet" id="diet" name="diet" value={props.selectedDiet} onChange={handleDietChange}>
                 <option value="">Select dietary restrictions</option>
                 <option value="vegan">Vegan</option>

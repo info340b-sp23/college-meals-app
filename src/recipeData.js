@@ -93,7 +93,7 @@ const recipedata = [
       img: "img/veggie-quesadilla.jpeg",
       imgAlt: "vegetable quesadilla", 
       author: "Jillian H.",
-      description: "Calling all college foodies! I just whipped up a game-changing Veggie Quesadilla that will satisfy your taste buds and budget. Imagine warm tortillas enveloping a melty blend of shredded Mexican cheese, sautéed bell peppers, onions, and beans for that perfect crunch and burst of flavor. It's an easy, nutritious, and incredibly delicious option whether you need a quick study break or a cozy dinner with friends. Sneak in those veggies and enjoy the ultimate college culinary experience with this Veggie Quesadilla sensation."
+      description: "Calling all college foodies! I just whipped up a game-changing Veggie Quesadilla that will satisfy your taste buds and budget. Imagine warm tortillas enveloping a melty blend of shredded Mexican cheese, sautéed bell peppers, onions, and beans for that perfect crunch and burst of flavor. It's an easy, nutritious, and delicious option whether you need a quick study break or a cozy dinner with friends."
     }
   ];
 export default recipedata;  

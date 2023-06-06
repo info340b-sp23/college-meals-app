@@ -18,9 +18,9 @@ function RecipeCard({ recipe }) {
           <span className="star-filled">&#9733;</span>
           <span className="star-filled">&#9733;</span>
           <span className="star">&#9733;</span>
-          <small className="text-muted">Posted by {recipe.author}</small>
+          <small className="text-muted recipe-author">Posted by {recipe.author}</small>
           <Link to={recipe.title.replace(/\s/g, "")}>
-            <button type="button" className="btn btn-secondary" aria-label="View Recipe Details">
+            <button type="button" className="btn view-recipe" aria-label="View Recipe Details">
               View More
             </button>
           </Link>

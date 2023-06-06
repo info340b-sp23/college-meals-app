@@ -87,7 +87,7 @@ const recipedata = [
       title: "Spaghetti Bolognese",
       cost: "$$",
       time: "45",
-      diet: "vegetarian",
+      diet: "gluten-free",
       allergies: ["gluten"],
       nutrition: "high-protein",
       img: "img/spaghetti-bolognese.png",

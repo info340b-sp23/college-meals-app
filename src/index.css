@@ -399,15 +399,12 @@
     padding-bottom: 20px;
   }
   
-  header {
-    margin-left: auto;
-  }
-  
   header * {
     display: inline-block;
   }
   
   header {
+    margin-left: auto;
     display: flex;
     align-items: flex-start;
   }

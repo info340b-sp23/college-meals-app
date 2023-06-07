@@ -59,7 +59,7 @@
     width: 40px;
     height: 40px;
   }
-  @media (min-width: 500px) {
+  @media (min-width: 300px) {
     nav .hamburger-menu {
       display: flex; 
     }
@@ -133,7 +133,7 @@
     max-height: 300px;
     border-radius: 10px 10px 0 0;
     display: block;
-    background-color: white;
+    background-color: F5ECE2;
     margin: 10px auto;
     width: calc(100% - 20px);
     object-fit: contain;
@@ -313,7 +313,7 @@
   }
 
   .btn {
-  background-color: #AD9885; 
+  background-color: #493D31; 
   border: none;
   color: white;
   padding: 10px 20px; 
@@ -325,7 +325,7 @@
   }
 
   .btn:hover {
-    background-color: #937962;
+    background-color: #AD9885;
   }
 
   .recipe-author {
@@ -399,15 +399,12 @@
     padding-bottom: 20px;
   }
   
-  header {
-    margin-left: auto;
-  }
-  
   header * {
     display: inline-block;
   }
   
   header {
+    margin-left: auto;
     display: flex;
     align-items: flex-start;
   }

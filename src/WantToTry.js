@@ -1,18 +1,18 @@
 import React from "react";
-import recipeData from "./recipeData";
 import { Link } from "react-router-dom";
+import wanttotrydata from "./wantToTryData";
 
-function RankList() {
+function WantToTry() {
   return (
     <section className="rank-container">
         <div className="rank-content">
           <h1>Lists</h1>
           <div className="list-selector">
-            <h2 className="underlined"><Link to="/rankList">Been</Link></h2>
-            <h2><Link to="/wantToTryList">Want To Try</Link></h2>
+            <h2><Link to="/rankList">Been</Link></h2>
+            <h2 className="underlined"><Link to="/wantToTryList">Want To Try</Link></h2>
           </div>
           <hr></hr>
-          <RankFoodCard data={recipeData}/>
+          <RankFoodCard data={wanttotrydata}/>
 
         </div>
       </section>
@@ -20,7 +20,6 @@ function RankList() {
 }
 
 function RankFoodCard({ data }) {
-  console.log(data);
   return data.map((entry) => (
     <React.Fragment key={entry.id}>
       <a href="recipe.html" className="rank-food">
@@ -34,11 +33,10 @@ function RankFoodCard({ data }) {
             <h4>Cost: {entry.cost}</h4>
             <p>{entry.description}</p>
           </div>
-        <p className="rank-rating">{entry.rank}</p>
       </a>
       <hr></hr>
     </React.Fragment>
   ));
 }
 
-export default RankList;
+export default WantToTry;

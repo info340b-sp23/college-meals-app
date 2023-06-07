@@ -16,12 +16,12 @@ function Profile() {
                   alt="a shopping cart list with hearts indicating a rank list"
                 />
             </Link>
-            <a href="want-to-try-list.html">
+            <Link to="/wantToTryList">
               <img
                 src="img/shopping-cart.png"
                 alt="a shopping cart indicating recipes to try"
               />
-          </a>
+          </Link>
           </div>
         </div>
       </section>

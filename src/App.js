@@ -13,6 +13,7 @@ import { Login } from "./Login";
 import { LoginPage } from "./LoginPage";
 import ProfileSettings from "./ProfileSettings";
 import { ProfileSettingsPage } from "./ProfileSettingsPage";
+import WantToTry from "./WantToTry";
 
 function App() {
 
@@ -56,6 +57,8 @@ function App() {
                 <Route path='/profile.html' element={<Profile />} />
 
                 <Route path='/ranklist' element={<RankList />} />
+
+                <Route path='/wantToTryList' element={<WantToTry />} />
 
                 <Route path='/GroceryPage' element={<GroceryPage />}/>
 

@@ -3,15 +3,14 @@ import { Nav } from "./Nav";
 import { Profile } from "./Profile";
 import ProfileSettings from "./ProfileSettings";
 
-function ProfilePage() {
+function ProfileSettingsPage() {
 
     return (
         <div>
-
-             <Profile />
-
+            <Profile />
+            <ProfileSettings/>
         </div>
 
     );
 }
-export {ProfilePage};
+export {ProfileSettingsPage};

@@ -1,14 +1,15 @@
 import React from "react";
 import dietRestrictionData from "./DietaryRestrictionData";
 import foodAllergiesData from "./FoodAllergiesData";
+import { Link } from "react-router-dom";
 
 function ProfileSettings() {
   return (
-    <section class="settings">
-      <section class="settings-box">
-        <div class="close-popup">
+    <section className="settings">
+      <section className="settings-box">
+        <div clasName="close-popup">
             <a href="profile.html">
-              <p>+</p>
+              <Link to="/profilePage"><p>+</p></Link>
             </a>
         </div>
         <form>

@@ -11,6 +11,8 @@ import RankList from "./RankList";
 import { ProfilePage } from "./ProfilePage";
 import { Login } from "./Login";
 import { LoginPage } from "./LoginPage";
+import ProfileSettings from "./ProfileSettings";
+import { ProfileSettingsPage } from "./ProfileSettingsPage";
 
 function App() {
 
@@ -60,6 +62,8 @@ function App() {
                 <Route path='/ProfilePage' element={<ProfilePage />}/>
 
                 <Route path='/LoginPage' element={<LoginPage loggedIn={handleLogin} />} />
+
+                <Route path='/ProfileSettings' element={<ProfileSettingsPage />} />
             </Routes>
 
 

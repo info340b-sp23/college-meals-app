@@ -3,14 +3,13 @@ import { Nav } from "./Nav";
 import { Profile } from "./Profile";
 import ProfileSettings from "./ProfileSettings";
 
-function GroceryPage() {
+function ProfilePage() {
 
     return (
         <div>
-             <Nav />
 
              <Profile />
-             <ProfileSettings />
+
 
              <footer>
                 <div className="container">
@@ -23,4 +22,4 @@ function GroceryPage() {
 
     );
 }
-export default GroceryPage;
+export {ProfilePage};

@@ -1,14 +1,25 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
-function Nav() {
+function Nav(props) {
+    const {loggedIn, setLoggedIn} = props;
+    console.log(loggedIn);
+    const handleLogout = () => {
+        setLoggedIn(false);
+    }
+    let loginStatus = loggedIn ? "Logout" : "Login";
+
     return (
         <nav>
             <div className="hamburger-menu"><img src="/img/menu.png" alt="Menu"></img></div>
             <div className="page-links">
-                <a href="index.html">Home</a>
-                <a href="grocery.html">Grocery</a>
-                <a href="profile.html">Profile</a>
-                <a href="/#">Log In</a>
+                <Link to="/">Home</Link>
+                <Link to="/grocerypage">Grocery</Link>
+                <Link to="/profilepage">Profile</Link>
+                <Link to="/loginpage" onClick={handleLogout}>
+                    {loginStatus}
+                </Link>
+
             </div>
             <header>
               <h1> Dorm Dishes</h1>

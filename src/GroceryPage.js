@@ -6,8 +6,6 @@ function GroceryPage() {
 
     return (
         <div>
-             <Nav />
-
              <Grocery />
 
              <footer>
@@ -21,4 +19,4 @@ function GroceryPage() {
 
     );
 }
-export default GroceryPage;
+export {GroceryPage};

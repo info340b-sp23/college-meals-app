@@ -4,13 +4,18 @@ import { Nav } from "./Nav";
 import { RecipeFeed } from "./RecipeFeed";
 import recipeData from "./recipeData";
 import {Grocery} from "./Grocery.js";
+import { GroceryPage }from "./GroceryPage";
 import {Recipe} from "./Recipe.js";
 import { Profile } from "./Profile";
 import RankList from "./RankList";
+import { ProfilePage } from "./ProfilePage";
+import { Login } from "./Login";
+import { LoginPage } from "./LoginPage";
 
 function App() {
 
-    const [filteredRecipes, setFilteredRecipes] = useState(recipeData);
+    const[filteredRecipes, setFilteredRecipes] = useState(recipeData);
+    const[loggedIn, setLoggedIn] = useState(false);
 
     function handleFilter(options) {
         setFilteredRecipes(prevRecipes => {
@@ -26,20 +31,37 @@ function App() {
         });
       }
 
+    const handleLogin = () => {
+      setLoggedIn(true);
+    }
+
+    const handleLogout = () => {
+      setLoggedIn(false);
+    }
+
     return (
         <div>
-            <Nav />
+            <Nav loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
             <Routes>
                 <Route path='*' element={<RecipeFeed recipes={filteredRecipes} onFilter={handleFilter} />} />
             
                 <Route path='/VeggieQuesadilla' element={<Recipe />}/>
+
+                <Route path='/ChickenStir-Fry' element={<Recipe />}/>
 
                 <Route path='/grocery.html' element={<Grocery />} />
 
                 <Route path='/profile.html' element={<Profile />} />
 
                 <Route path='/ranklist' element={<RankList />} />
+
+                <Route path='/GroceryPage' element={<GroceryPage />}/>
+
+                <Route path='/ProfilePage' element={<ProfilePage />}/>
+
+                <Route path='/LoginPage' element={<LoginPage loggedIn={handleLogin} />} />
             </Routes>
+
 
              <footer>
                 <div className="container">

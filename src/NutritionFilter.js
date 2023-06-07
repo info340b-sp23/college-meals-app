@@ -7,7 +7,7 @@ function NutritionFilter(props) {
 
   return (
     <div className="form-group">
-      <label htmlFor="nutrition">Nutrition:</label>
+      <label>Nutrition:</label>
       <div>
         <label htmlFor="high-protein">
           <input

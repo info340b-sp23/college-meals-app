@@ -34,7 +34,7 @@ function DietCheckboxes({ data, breakLine }) {
       />
       <label htmlFor={entry.name}>{entry.capName}</label>
       <img src={entry.img} alt={entry.alt}/>
-      {entry.id % breakLine === 0 && <br />}
+      {entry.id % breakLine === 0 && <div></div>}
     </React.Fragment>
   ));
 }

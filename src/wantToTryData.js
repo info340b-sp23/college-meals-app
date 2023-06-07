@@ -5,14 +5,14 @@ const wanttotrydata = [
   {
     id: 1,
     title: "Curry Udon",
-    cost: "$5.50",
+    cost: "$",
     time: "10",
     dietImg: "img/no-diet.png",
     dietAlt: "no diet restriction",
     allergies: [],
     nutrition: "low-fat",
     img: "img/curry-udon.jpeg",
-    imgAlt: "curry udon", 
+    imgAlt: "curry udon",
     author: "Erica T.",
     rank: 8.3,
     description: "Hey, I'd love to share my favorite curry udon recipe with you! It's a dish that brings together the best of Japanese and Indian flavors. To start, I gather my ingredients: udon noodles, curry paste, vegetables (like carrots, onions, and bell peppers), protein of choice (beef, chicken, or tofu), and some garnishes like green onions and sesame seeds."
@@ -20,7 +20,7 @@ const wanttotrydata = [
   {
     id: 2,
     title: "Scrambled Eggs with Tomatoes",
-    cost: "$3.50",
+    cost: "$",
     time: "5",
     dietImg: "img/no-diet.png",
     dietAlt:"no diet restriction",

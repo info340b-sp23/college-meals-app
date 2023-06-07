@@ -5,7 +5,7 @@ const recipedata = [
     {
       id: 1,
       title: "Veggie Quesadilla",
-      cost: "$7.00",
+      cost: "$",
       time: "15",
       dietImg: "img/vegetarian.png",
       dietAlt: "vegetarian",
@@ -20,7 +20,7 @@ const recipedata = [
     {
       id: 2,
       title: "Chicken Stir-Fry",
-      cost: "$9.00",
+      cost: "$",
       time: "30",
       dietImg: "img/no-diet.png",
       dietAlt:"no diet restriction",
@@ -35,7 +35,7 @@ const recipedata = [
     {
       id: 3,
       title: "Vegan Curry",
-      cost: "$5.00",
+      cost: "$$",
       time: "60",
       dietImg: "img/vegan.png",
       dietAlt: "vegan",
@@ -50,7 +50,7 @@ const recipedata = [
     {
       id: 4,
       title: "Grilled Salmon",
-      cost: "$16.00",
+      cost: "$$$",
       time: "20",
       dietImg: "img/fish.png",
       dietAlt: "pescatarian",
@@ -66,7 +66,7 @@ const recipedata = [
     {
       id: 5,
       title: "Mushroom Risotto",
-      cost: "$6.00",
+      cost: "$$",
       time: "45",
       dietImg: "img/vegetarian.png",
       dietAlt: "vegetarian",
@@ -81,7 +81,7 @@ const recipedata = [
     {
       id: 6,
       title: "Gluten-Free Pizza",
-      cost: "$20.00",
+      cost: "$$$",
       time: "30",
       dietImg: "img/gluten-free.png",
       dietAlt: "gluten-free",
@@ -97,7 +97,7 @@ const recipedata = [
     {
       id: 7,
       title: "Spaghetti Bolognese",
-      cost: "$14.00",
+      cost: "$$",
       time: "45",
       dietImg: "img/gluten-free.png",
       dietAlt: "gluten0free",

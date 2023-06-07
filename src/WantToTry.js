@@ -33,6 +33,7 @@ function RankFoodCard({ data }) {
             <h4>Cost: {entry.cost}</h4>
             <p>{entry.description}</p>
           </div>
+          <p className="rank-rating"></p>
       </a>
       <hr></hr>
     </React.Fragment>

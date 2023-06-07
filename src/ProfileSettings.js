@@ -7,10 +7,10 @@ function ProfileSettings() {
   return (
     <section className="settings">
       <section className="settings-box">
-        <div clasName="close-popup">
-            <a href="profile.html">
-              <Link to="/profilePage"><p>+</p></Link>
-            </a>
+        <div className="close-popup">
+            <Link to="/profilePage">
+              <p>+</p>
+            </Link>
         </div>
         <form>
           <h2>Dietary Restrictions</h2>

@@ -9,9 +9,7 @@ import {Recipe} from "./Recipe.js";
 import { Profile } from "./Profile";
 import RankList from "./RankList";
 import { ProfilePage } from "./ProfilePage";
-import { Login } from "./Login";
 import { LoginPage } from "./LoginPage";
-import ProfileSettings from "./ProfileSettings";
 import { ProfileSettingsPage } from "./ProfileSettingsPage";
 import WantToTry from "./WantToTry";
 
@@ -36,10 +34,6 @@ function App() {
 
     const handleLogin = () => {
       setLoggedIn(true);
-    }
-
-    const handleLogout = () => {
-      setLoggedIn(false);
     }
 
     return (
@@ -68,7 +62,6 @@ function App() {
 
                 <Route path='/ProfileSettings' element={<ProfileSettingsPage />} />
             </Routes>
-
 
              <footer>
                 <div className="container">

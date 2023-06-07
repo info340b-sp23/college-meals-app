@@ -1,5 +1,4 @@
 import React from "react";
-import { Nav } from "./Nav";
 import {Grocery} from "./Grocery.js";
 
 function GroceryPage() {

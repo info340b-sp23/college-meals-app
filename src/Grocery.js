@@ -31,8 +31,6 @@ function CSVResults(props) {
 };
 
 function Grocery(props) {
-
-
     const handleClick = (event) => {
         window.open(event, '_blank', 'noreferrer');
         };

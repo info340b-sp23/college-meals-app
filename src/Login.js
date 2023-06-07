@@ -1,7 +1,6 @@
 import React from "react";
 import { useState, useEffect} from "react";
 import './index.css';
-import { Nav } from "./Nav";
 
 function Login(props) {
   const[username, setUsername] = useState("");
@@ -14,7 +13,7 @@ function Login(props) {
 
   const handleLogin = (event) => {
     event.preventDefault();
-    if(username === "user123" && password === "pass123") {
+    if(username === "rosesmith" && password === "pass123") {
       setLoggedIn(true);
       setErrorMessage("");
     } else {
